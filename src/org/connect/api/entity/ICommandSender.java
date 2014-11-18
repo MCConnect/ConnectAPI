@@ -15,7 +15,8 @@ public interface ICommandSender extends Permissable {
 	 * Get's the sender to run a command
 	 * 
 	 * @param command The command to run
+	 * @param args The arguments supplied
 	 */
-	public void performCommand(String command);
+	public void performCommand(String command, String[] args);
 
 }

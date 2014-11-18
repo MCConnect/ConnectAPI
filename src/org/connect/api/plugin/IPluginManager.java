@@ -3,6 +3,7 @@ package org.connect.api.plugin;
 import java.io.File;
 import java.util.ArrayList;
 
+import org.connect.api.entity.ICommandSender;
 import org.connect.api.event.IEvent;
 
 public interface IPluginManager {
@@ -59,7 +60,7 @@ public interface IPluginManager {
 	 * 
 	 * @return A list of enabled plugins
 	 */
-	public ArrayList<PluginBase> getEnabledPlugins();
+	public PluginBase[] getEnabledPlugins();
 
 	/**
 	 * Get's a plugin by the name
@@ -75,5 +76,15 @@ public interface IPluginManager {
 	 * @param event The event to be called
 	 */
 	public void callEvent(IEvent event);
+
+	
+	/**
+	 * Run's a command
+	 * 
+	 * @param command The command to be ran
+	 * @param sender The sender who ran it
+	 * @param args The arguments supplied
+	 */
+	public void runCommand(String command, ICommandSender sender, String[] args);
 
 }

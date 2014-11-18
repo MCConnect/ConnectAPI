@@ -3,6 +3,7 @@ package org.connect.api;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import org.connect.api.entity.ICommandSender;
 import org.connect.api.entity.IOfflinePlayer;
 import org.connect.api.entity.IPlayer;
 import org.connect.api.permissions.IPermissionManager;
@@ -154,6 +155,13 @@ public interface Server {
 	 * @return The permission manager
 	 */
 	public IPermissionManager getPermissionManager();
+
+	/**
+	 * Get's the console sender
+	 * 
+	 * @return The console sender
+	 */
+	public ICommandSender getConsoleSender();
 
 	/**
 	 * Interface designed to handle packets
