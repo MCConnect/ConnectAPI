@@ -3,8 +3,9 @@ package org.connect.api.world;
 import java.util.ArrayList;
 
 import org.connect.api.block.IBlock;
+import org.connect.api.entity.Identifiable;
 
-public interface IWorld {
+public interface IWorld extends Identifiable {
 
 	/**
 	 * Gets a block by the location
