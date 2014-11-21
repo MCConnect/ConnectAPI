@@ -49,6 +49,11 @@ public interface IPluginManager {
 	public void enablePlugin(PluginBase plugin);
 
 	/**
+	 * Disables all plugins in the plugins directory
+	 */
+	public void disablePlugins();
+
+	/**
 	 * Disables a certain plugin
 	 * 
 	 * @param plugin The plugin to disable

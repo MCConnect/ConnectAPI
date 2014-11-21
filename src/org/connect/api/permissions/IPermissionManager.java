@@ -12,7 +12,7 @@ public interface IPermissionManager {
 	 * @param player The player to grant
 	 * @param permission The permission to grant
 	 */
-	public void grantPermission(IPlayer player, IPermission permission);
+	public void grantPermission(Permissable perm, IPermission permission);
 
 	/**
 	 * Revokes a player permission
@@ -20,7 +20,7 @@ public interface IPermissionManager {
 	 * @param player The player to revoke
 	 * @param permission The permission to revoke
 	 */
-	public void revokePermission(IPlayer player, IPermission permission);
+	public void revokePermission(Permissable perm, IPermission permission);
 
 	/**
 	 * Get's if the player has a certain permission
@@ -29,6 +29,6 @@ public interface IPermissionManager {
 	 * @param permission The permission to check
 	 * @return A boolean depending on if the player has permission
 	 */
-	public boolean hasPermission(IPlayer player, IPermission permission);
+	public boolean hasPermission(Permissable perm, IPermission permission);
 
 }

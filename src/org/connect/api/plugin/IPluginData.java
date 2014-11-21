@@ -10,24 +10,17 @@ public interface IPluginData {
 	public String getName();
 
 	/**
-	 * Get's the plugin's description
-	 * 
-	 * @return The plugin's description
-	 */
-	public String getDescription();
-
-	/**
 	 * Get's the plugin's author
 	 * 
 	 * @return The plugin's author
 	 */
-	public String getAuthor();
+	public String[] getAuthors();
 
 	/**
 	 * Get's the plugin's version
 	 * 
 	 * @return the Plugin's version
 	 */
-	public int getVersion();
+	public String getVersion();
 
 }

@@ -1,6 +1,6 @@
 package org.connect.api.event;
 
-public @interface EventHandler {
+public @interface Listen {
 
 	
 
